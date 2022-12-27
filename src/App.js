@@ -31,7 +31,7 @@ function App() {
       <SimpleuseReducer />
       <h3 style={{ color: "green" }}> complex sample</h3>
       <UseReducer />
-      <h3>useForm sample</h3>
+      <h1>useForm sample</h1>
       <Form />
     </div>
   );
