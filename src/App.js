@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import UseState from "./components/UseState";
 import UseEffect from "./components/UseEffect";
+import UseMemo from "./components/UseMemo";
 
 function App() {
   return (
@@ -10,6 +11,8 @@ function App() {
       <UseState />
       <h1>useEffect sample</h1>
       <UseEffect />
+      <h1>useMemo sample</h1>
+      <UseMemo />
     </div>
   );
 }
