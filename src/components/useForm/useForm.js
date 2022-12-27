@@ -1,13 +1,20 @@
 import { useState } from "react";
 
-export const useForm = () => {
+const useForm = (submitCallback) => {
+  //maintains dynamic state for all the form elements
   const [state, setState] = useState({});
 
-  const handleChange = (e) => {
-    setState((prevState) => {
-      return { ...prevState, [e.target.name]: e.target.value };
-    });
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    submitCallback();
   };
 
-  return [state, handleChange];
+  const handleChange = (e) => {
+    //persists all synthetic events
+    e.persist();
+    setState((state) => ({ ...state, [e.target.name]: e.target.value }));
+  };
+
+  return [state, handleChange, handleSubmit, setState];
 };
+export default useForm;
