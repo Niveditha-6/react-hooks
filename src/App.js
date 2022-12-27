@@ -1,8 +1,9 @@
-import logo from "./logo.svg";
-import "./App.css";
 import UseState from "./components/UseState";
 import UseEffect from "./components/UseEffect";
 import UseMemo from "./components/UseMemo";
+import UseCallback from "./components/useCallback/UseCallback";
+import { ThemeProvider } from "./components/useContext/ThemeContext";
+import UseContext from "./components/useContext/UseContext";
 
 function App() {
   return (
@@ -13,6 +14,12 @@ function App() {
       <UseEffect />
       <h1>useMemo sample</h1>
       <UseMemo />
+      <h1>useCallback sample</h1>
+      <UseCallback />
+      <h1>useContext sample</h1>
+      <ThemeProvider>
+        <UseContext />
+      </ThemeProvider>
     </div>
   );
 }
