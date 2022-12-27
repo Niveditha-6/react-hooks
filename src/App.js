@@ -7,6 +7,7 @@ import UseContext from "./components/useContext/UseContext";
 import UseRef from "./components/UseRef";
 import SimpleuseReducer from "./components/useReducer/SimpleuseReducer";
 import UseReducer from "./components/useReducer/UseReducer";
+import Form from "./components/useForm/Form";
 
 function App() {
   return (
@@ -30,6 +31,8 @@ function App() {
       <SimpleuseReducer />
       <h3 style={{ color: "green" }}> complex sample</h3>
       <UseReducer />
+      <h3>useForm sample</h3>
+      <Form />
     </div>
   );
 }
