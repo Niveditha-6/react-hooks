@@ -30,7 +30,7 @@ function App() {
       <h3 style={{ color: "green" }}> simple sample</h3>
       <SimpleuseReducer />
       <h3 style={{ color: "green" }}> complex sample</h3>
-      <UseReducer d="hh" />
+      <UseReducer />
       <h1>useForm sample</h1>
       <Form />
     </div>
