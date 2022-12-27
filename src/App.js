@@ -4,6 +4,7 @@ import UseMemo from "./components/UseMemo";
 import UseCallback from "./components/useCallback/UseCallback";
 import { ThemeProvider } from "./components/useContext/ThemeContext";
 import UseContext from "./components/useContext/UseContext";
+import UseRef from "./components/UseRef";
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
       <ThemeProvider>
         <UseContext />
       </ThemeProvider>
+      <h1>useRef sample</h1>
+      <UseRef />
     </div>
   );
 }
